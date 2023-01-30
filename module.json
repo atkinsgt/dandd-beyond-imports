@@ -1,0 +1,89 @@
+{
+  "id": "dandd-beyond-imports",
+  "name": "dandd-beyond-imports",
+  "title": "D&D Beyond Imports",
+  "description": "Imported compendiums from D&D Beyond.",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": "0.8.6",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "author": "Gharreth Adekyn",
+  "authors": [
+    {
+      "name": "Gharreth Adekyn"
+    }
+  ],
+  "packs": [
+    {
+      "name": "actors",
+      "label": "D&D Beyond Imports",
+      "path": "/packs/actors.db",
+      "entity": "Actor",
+      "type": "Actor",
+      "system": "dnd5e"
+    },
+    {
+      "name": "items",
+      "label": "D&D Beyond Imports",
+      "path": "/packs/items.db",
+      "entity": "Item",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "journals",
+      "label": "D&D Beyond Imports",
+      "path": "/packs/journals.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "macros",
+      "label": "D&D Beyond Imports",
+      "path": "/packs/macros.db",
+      "entity": "Macro",
+      "type": "Macro"
+    },
+    {
+      "name": "maps",
+      "label": "D&D Beyond Imports",
+      "path": "/packs/maps.db",
+      "entity": "Scene",
+      "type": "Scene"
+    },
+    {
+      "name": "rolltables",
+      "label": "D&D Beyond Imports",
+      "path": "/packs/rolltables.db",
+      "entity": "RollTable",
+      "type": "RollTable"
+    }
+  ],
+  "esmodules": [
+    "./scripts/init.js"
+  ],
+  "dependencies": [
+    {
+      "name": "scene-packer",
+      "manifest": "https://github.com/League-of-Foundry-Developers/scene-packer/releases/latest/download/module.json",
+      "type": "module"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "scene-packer",
+        "type": "module",
+        "manifest": "https://github.com/League-of-Foundry-Developers/scene-packer/releases/latest/download/module.json"
+      }
+    ]
+  },
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "manifestPlusVersion": "1.2.0"
+}
